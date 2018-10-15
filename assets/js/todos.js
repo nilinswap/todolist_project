@@ -1,1 +1,5 @@
-alert("connected");
+
+//J
+$("li").click(function(){
+	$(this).toggleClass("completed");
+})
