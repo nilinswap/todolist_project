@@ -17,6 +17,10 @@ $("input[type='text']").on("keypress", function(event){
 	if( event.which === 13){
 		var tex = $(this).val();
 		$(this).val("");
-		$("ul").append("<li> <span>X</span>  " + tex + "</li>");
+		$("ul").append("<li><span><img class=\"garbage\" src=\"https://png.icons8.com/metro/50/000000/trash.png\"></span>  " + tex + "</li>");
 	}
+});
+
+$("img.plus").click(function(){
+	$("input[type='text']").fadeToggle(200);
 });

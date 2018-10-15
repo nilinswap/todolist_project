@@ -34,8 +34,53 @@ li:nth-child(2n){
 
 input:focus {
 	background:#fff;
-	border: 3px solid  #2980b9;
+	border: 2px solid  #2980b9;
 	outline: none;
+
+}
+
+
+
+span{
+	background: yellow;
+	margin-right:10px;
+	height:40px;
+	width: 0px;
+	text-align: center;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
+body{
+	background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+img.plus{
+/*margin: 0px 0px 0px 160px;*/
+float: right;
+width: 30px;
+height: 30px
+}
+
+img.garbage{
+width: 0px;
+opacity: 0;
+height: 15px;
+}
+
+li:hover img.garbage{
+	width:15px;
+	opacity: 1.0;
 }
 
 
@@ -45,7 +90,8 @@ input:focus {
 	width: 100%;
 	box-sizing: border-box;
 	color:  #2980b9;
-
+	height:100%;
+	/*border: 2px solid rgba(0, 0, 0, 0);*/
 }
 
 .completed{
